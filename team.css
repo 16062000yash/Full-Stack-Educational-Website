@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("image/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+}
+
+.wrapper{
+    margin: top 10%;
+}
+.wrapper h1{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+    color:red;
+    font-weight: bolder;
+}
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team .team_member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding:20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+.team .team_member h3{
+    color:#81c644;
+    font-size: 26px;
+    margin-top: 50px;
+}
+.team .team_member p.role{
+    color:#ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+.team .team_member .team_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left:50%;
+    transform: translateX(-50%);
+    background: white;
+}
+.team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}

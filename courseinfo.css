@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0,0,0,0.85)),url("image/vasily-koloda-8CqDvPuo_kI-unsplash.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+.heading{
+    color:white;
+    padding: 1rem;
+    font-size: 4rem;
+    text-align: center;
+}
+.course .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.course .box-container .box{
+    width:35rem;
+    border: .2rem solid rgba(0,0,0,.3);
+    position: relative;
+    margin:1.5rem;
+    background: white;
+}
+.course .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    object-fit:cover;
+}
+.course .box-container .box .content{
+    padding: 1rem;
+}
+.course .box-container .box .content .stars i{
+    color: #f39c12;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
+.course .box-container .box .content .title{
+    color:#444;
+    font-size: 2.1rem;
+}
+.course .box-container .box .content .title:hover{
+    text-decoration:underline;
+}
+.course .box-container .box .content p{
+    padding: 1rem 0;
+    color: #666;
+    font-size: 1.5rem;
+}
+.course .box-container .box .content .info{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: .5rem;
+    border-top: .1rem solid rgba(0,0,0,.3);
+}
+.course .box-container .box .content .info h3{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #666;
+}
+.course .box-container .box .content .info h3 i{
+    color: #f39c12;
+}
+.course .box-container .box .price{
+   position: absolute;
+   top: 16rem;right: 1rem;
+   height: 8rem;
+   width: 8rem;
+   line-height: 8rem;
+   text-align: center;
+   border-radius: 50%;
+   background:#f39c12;
+   color:white;
+   font-size: 2rem;
+}
