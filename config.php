@@ -146,4 +146,25 @@ if(isset($_POST['Response'])){
     $sql = "INSERT INTO `contact_form`(`Name`, `Response`) VALUES ('$name','$response')";
     mysqli_query($conn,$sql); 
 }
+if(isset($_POST['upload'])){
+    $file_name=$_FILES['file']['name'];
+    $file_type=$_FILES['file']['type'];
+    $temp_name=$_FILES['file']['tmp_name'];
+    $file_size=$_FILES['file']['size'];
+    $file_destination = "videos/".$file_name;
+
+    if (move_uploaded_file($temp_name,$file_destination)){
+    $q = "INSERT INTO videos (Name) VALUES ('$file_name')";
+
+    if(mysqli_query($conn,$q)){
+        $success = "Video uploaded successfully.";
+    }
+    else{
+        $failed = "Something Went Wrong??";
+    }
+    }
+    else{
+        $msz = "please select a video to upload..!";
+    }
+}
 ?>
