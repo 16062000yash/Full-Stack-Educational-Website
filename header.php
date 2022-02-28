@@ -24,7 +24,7 @@
             <span>Dashboard</span></a>
           </li>
           <li>
-            <a href=""><span class="las la-clipboard-list"></span>
+            <a href="phpvideo.php"><span class="las la-clipboard-list"></span>
             <span> My Courses</span></a>
           </li>
           <li>
